@@ -1,8 +1,8 @@
 package rocks.byivo.solid.shapes;
 
-import rocks.byivo.solid.interfaces.IShape;
+import rocks.byivo.solid.interfaces.IShapeArea;
 
-public class Retangulo implements IShape{
+public class Retangulo extends Shape implements IShapeArea{
 
 	private double comprimento;
 	private double largura;

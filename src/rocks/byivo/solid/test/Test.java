@@ -8,11 +8,11 @@ import rocks.byivo.solid.shapes.controller.ShapeOutputter;
 public class Test {
 	
 	public static void main(String[] args) {
-		System.out.println(new ShapeCalculator(new Retangulo(3, 9)).calcular());
-		System.out.println(new ShapeCalculator(new Retangulo(10, 20)).calcular());
+		System.out.println(new ShapeCalculator(new Retangulo(3, 9)).calcularArea());
+		System.out.println(new ShapeCalculator(new Retangulo(10, 20)).calcularArea());
 		
-		System.out.println(new ShapeCalculator(new Circulo(2)).calcular());
-		System.out.println(new ShapeCalculator(new Circulo(5)).calcular());
+		System.out.println(new ShapeCalculator(new Circulo(2)).calcularArea());
+		System.out.println(new ShapeCalculator(new Circulo(5)).calcularArea());
 		
 		System.out.println();
 		
@@ -21,7 +21,5 @@ public class Test {
 		
 		new ShapeOutputter(new ShapeCalculator(new Circulo(2))).outputHTML();;
 		new ShapeOutputter(new ShapeCalculator(new Circulo(5))).outputJSON();;
-		
-		new ShapeOutputter(new ShapeCalculator(new Object())).outputHTML();;
 	}
 }

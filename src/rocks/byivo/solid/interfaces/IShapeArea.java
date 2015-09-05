@@ -1,6 +1,6 @@
 package rocks.byivo.solid.interfaces;
 
-public interface IShape {
+public interface IShapeArea {
 	
 	double calcular();
 }

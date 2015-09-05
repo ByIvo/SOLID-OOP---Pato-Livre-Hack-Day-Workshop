@@ -1,8 +1,8 @@
 package rocks.byivo.solid.shapes;
 
-import rocks.byivo.solid.interfaces.IShape;
+import rocks.byivo.solid.interfaces.IShapeArea;
 
-public class Circulo implements IShape{
+public class Circulo extends Shape implements IShapeArea{
 	
 	private double raio;
 
@@ -27,4 +27,5 @@ public class Circulo implements IShape{
 	public double calcular() {
 		return Math.pow(raio,2) * Math.PI;
 	} 
+	
 }

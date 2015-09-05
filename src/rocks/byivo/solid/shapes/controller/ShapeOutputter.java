@@ -18,10 +18,10 @@ public class ShapeOutputter {
 	}
 
 	public void outputHTML() {
-		System.out.println("<p>" + calculator.calcular()+ "</p>");
+		System.out.println("<p>" + calculator.calcularArea()+ "</p>");
 	}
 	
 	public void outputJSON() {
-		System.out.println("{area:" + calculator.calcular() + "}");
+		System.out.println("{area:" + calculator.calcularArea() + "}");
 	}
 }
