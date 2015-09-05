@@ -1,6 +1,8 @@
 package rocks.byivo.solid.shapes;
 
-public class Circulo {
+import rocks.byivo.solid.interfaces.IShape;
+
+public class Circulo implements IShape{
 	
 	private double raio;
 
@@ -20,4 +22,9 @@ public class Circulo {
 	public void setRaio(double raio) {
 		this.raio = raio;
 	}
+	
+	@Override
+	public double calcular() {
+		return Math.pow(raio,2) * Math.PI;
+	} 
 }

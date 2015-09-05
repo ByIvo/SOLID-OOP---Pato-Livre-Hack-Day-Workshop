@@ -1,7 +1,6 @@
 package rocks.byivo.solid.shapes.controller;
 
-import rocks.byivo.solid.shapes.Circulo;
-import rocks.byivo.solid.shapes.Retangulo;
+import rocks.byivo.solid.interfaces.IShape;
 
 public class ShapeCalculator {
 
@@ -21,11 +20,8 @@ public class ShapeCalculator {
 	}
 
 	public double calcular() {
-		if (shape instanceof Circulo) {
-			return Math.pow(((Circulo) shape).getRaio(), 2) * Math.PI;
-		} else if (shape instanceof Retangulo) {
-			Retangulo ret = (Retangulo) shape;
-			return ret.getLargura() * ret.getComprimento();
+		if (shape instanceof IShape) {
+			return ((IShape) shape).calcular();
 		} else {
 			throw new RuntimeException("Shape não reconhecida!");
 		}

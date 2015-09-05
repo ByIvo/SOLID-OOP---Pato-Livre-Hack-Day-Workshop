@@ -1,6 +1,8 @@
 package rocks.byivo.solid.shapes;
 
-public class Retangulo {
+import rocks.byivo.solid.interfaces.IShape;
+
+public class Retangulo implements IShape{
 
 	private double comprimento;
 	private double largura;
@@ -29,5 +31,10 @@ public class Retangulo {
 
 	public void setLargura(double largura) {
 		this.largura = largura;
+	}
+	
+	@Override
+	public double calcular() {
+		return largura * comprimento;
 	}
 }

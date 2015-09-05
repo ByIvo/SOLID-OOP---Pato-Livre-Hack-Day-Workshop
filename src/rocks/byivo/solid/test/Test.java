@@ -14,6 +14,8 @@ public class Test {
 		System.out.println(new ShapeCalculator(new Circulo(2)).calcular());
 		System.out.println(new ShapeCalculator(new Circulo(5)).calcular());
 		
+		System.out.println();
+		
 		new ShapeOutputter(new ShapeCalculator(new Retangulo(3, 9))).outputHTML();;
 		new ShapeOutputter(new ShapeCalculator(new Retangulo(10, 20))).outputJSON();;
 		
