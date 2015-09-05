@@ -4,6 +4,8 @@ import rocks.byivo.solid.shapes.Circulo;
 import rocks.byivo.solid.shapes.Esfera;
 import rocks.byivo.solid.shapes.Retangulo;
 import rocks.byivo.solid.shapes.controller.ShapeCalculator;
+import rocks.byivo.solid.shapes.controller.ShapeHTMLOutputter;
+import rocks.byivo.solid.shapes.controller.ShapeJSONOutputter;
 import rocks.byivo.solid.shapes.controller.ShapeOutputter;
 import rocks.byivo.solid.shapes.controller.ShapeVolumeCalculator;
 
@@ -18,17 +20,18 @@ public class Test {
 		
 		System.out.println();
 		
-		new ShapeOutputter(new ShapeCalculator(new Retangulo(3, 9))).outputHTML();
-		new ShapeOutputter(new ShapeCalculator(new Retangulo(10, 20))).outputJSON();
+		ShapeOutputter shape1 = new ShapeJSONOutputter(new ShapeCalculator(new Retangulo(3, 9)));
+		ShapeOutputter shape2 = new ShapeJSONOutputter(new ShapeCalculator(new Circulo(2)));
+		ShapeOutputter shape3 =new ShapeHTMLOutputter(new ShapeVolumeCalculator(new Esfera(3, 9)));
 		
-		new ShapeOutputter(new ShapeCalculator(new Circulo(2))).outputHTML();
-		new ShapeOutputter(new ShapeCalculator(new Circulo(5))).outputJSON();
-		
+		shape1.outputArea();
 		System.out.println();
-		
-		new ShapeOutputter(new ShapeVolumeCalculator(new Esfera(3, 9))).outputHTML();
-		new ShapeOutputter(new ShapeVolumeCalculator(new Esfera(10, 20))).outputVolumeJSON();
-		
-		new ShapeOutputter(new ShapeVolumeCalculator(new Circulo(2))).outputVolumeHTML();
+		shape2.outputArea();
+		System.out.println();
+		shape3.outputArea();
+		shape3.outputVolume();
+		System.out.println();
+		shape1.outputVolume();
+
 	}
 }
