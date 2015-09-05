@@ -1,6 +1,9 @@
 # SOLID-OOP---Pato-Livre-Hack-Day-Workshop
 Exemplo de uma implementação Java com conceitos SOLID em OOP, utilizada durante um workshop durante o Hack Day do Pato Livre
 
+LINK da apresentação:
+https://docs.google.com/presentation/d/1GcGGEhz9zKFSTmDGSYrgNi4DyyyDBlL5l5O00548nE0/edit
+
 Se quiser mais material de leitura, segue minha pesquisa:
 
 ### S.O.L.I.D: The First 5 Principles of Object Oriented Design
