@@ -30,9 +30,4 @@ public class Retangulo {
 	public void setLargura(double largura) {
 		this.largura = largura;
 	}
-	
-	public double calcularArea() {
-		return largura * comprimento;
-	}
-
 }

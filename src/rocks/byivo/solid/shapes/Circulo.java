@@ -20,8 +20,4 @@ public class Circulo {
 	public void setRaio(double raio) {
 		this.raio = raio;
 	}
-	
-	public double calcularArea() {
-		return Math.pow(raio, 2) * Math.PI;
-	}
 }
